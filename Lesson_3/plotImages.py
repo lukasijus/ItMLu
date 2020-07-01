@@ -22,10 +22,12 @@ def plotimages(class_names, dataset, imageCount):
         i = i + 1
     plt.show()
 
-def plotbatch(name, loss, accuracy, batch_size, test_labels,class_names,predictions,test_images):
+def plotbatch(name, loss, accuracy, batch_size, test_labels,class_names,predictions,test_images, save):
     index = 0
     loss = float("{:.2f}".format(loss))
     accuracy = float("{:.2f}".format(accuracy))
+    loss1 = loss * 100
+    accuracy1 = accuracy * 100
     fig, axes = plt.subplots(nrows=int(round(math.sqrt(batch_size))), ncols=int(round(math.ceil(math.sqrt(batch_size)))))
     fig.suptitle(name + '\n' + 'Loss: ' + str(loss) + ' ' + 'Accuracy: ' + str(accuracy))
     axes = axes.flatten()
@@ -37,7 +39,6 @@ def plotbatch(name, loss, accuracy, batch_size, test_labels,class_names,predicti
         wspace=0.95,
         hspace=0.98)
     plt.grid(False)
-    plt.axis('off')
     for image in test_images:
         rect = patches.Rectangle((0, 0), 27, 27, linewidth=5, edgecolor='g', facecolor='none')
         class_name_index = 0
@@ -50,7 +51,8 @@ def plotbatch(name, loss, accuracy, batch_size, test_labels,class_names,predicti
             class_name_index += 1
         axes[index].set_xlabel('P: ' + str(float("{:.2f}".format(highest_prediction))) +
                    '\n' + 'PC: ' + class_names[highest_prediction_index] +
-                   '\n' + 'GTC: ' + class_names[test_labels[index]])
+                   '\n' + 'GTC: ' + class_names[test_labels[index]],
+                   fontsize = 6)
         if highest_prediction_index != test_labels[index]:
             rect = patches.Rectangle((0, 0), 27, 27, linewidth=5, edgecolor='r', facecolor='none')
         axes[index].add_patch(rect)
@@ -59,4 +61,9 @@ def plotbatch(name, loss, accuracy, batch_size, test_labels,class_names,predicti
         axes[index].set_yticklabels([])
         axes[index].set_xticklabels([])
         index += 1
+    if save:
+        name  = 'LOSS_' + str(loss) + '_ACCURACY_' + str(accuracy) + name + '.png'
+        plt.savefig(name)
     plt.show()
+
+

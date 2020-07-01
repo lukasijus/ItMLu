@@ -20,7 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df232eb5-8393-430e-babb-05e2398ad2d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lesson_3/supp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.35_ACCURACY_0.88_LAYERS_5_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.43_ACCURACY_0.85_LAYERS_5_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.44_ACCURACY_0.85_LAYERS_4_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.45_ACCURACY_0.85_LAYERS_4_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.51_ACCURACY_0.83_LAYERS_3_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.61_ACCURACY_0.8_LAYERS_3_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.65_ACCURACY_0.8_LAYERS_4_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.66_ACCURACY_0.79_LAYERS_3_INPUT_NEURON_=_256_BATCH_SIZE_=_16_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.73_ACCURACY_0.8_LAYERS_3_INPUT_NEURON_=_256_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.75_ACCURACY_0.77_LAYERS_4_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.77_ACCURACY_0.72_LAYERS_3_INPUT_NEURON_=_128_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.79_ACCURACY_0.77_LAYERS_4_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.84_ACCURACY_0.79_LAYERS_3_INPUT_NEURON_=_1024_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.87_ACCURACY_0.75_LAYERS_3_INPUT_NEURON_=_256_BATCH_SIZE_=_64_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.87_ACCURACY_0.7_LAYERS_3_INPUT_NEURON_=_256_BATCH_SIZE_=_8_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_0.87_ACCURACY_0.7_LAYERS_4_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_1.13_ACCURACY_0.74_LAYERS_3_INPUT_NEURON_=_256_BATCH_SIZE_=_100_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_1.34_ACCURACY_0.43_LAYERS_4_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_1.42_ACCURACY_0.43_LAYERS_3_INPUT_NEURON_=_32_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/LOSS_2.3_ACCURACY_0.1_LAYERS_4_INPUT_NEURON_=_512_BATCH_SIZE_=_32_Epoch_=_1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson_3/fashionmnsitNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/fashionmnsitNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson_3/plotImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/plotImages.py" afterDir="false" />
@@ -115,22 +134,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593448569018" />
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1593541337696">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1593642824075">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1593541337696" />
-    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1593541337696">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1593642824075" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1593642824075">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1593541337696" />
-    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1593541337696">
+    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1593642824075" />
+    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1593642824075">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1593541337696" />
-    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1593541337696">
+    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1593642824075" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1593642824075">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1593541337696" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1593642824075" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1593547351245">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
