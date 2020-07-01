@@ -10,6 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import nrml
 import plotImages
+import supp
 print(tf.__version__)
 
 # Build dataset (use only once)
@@ -34,11 +35,11 @@ test_numbers = metadata.splits['test'].num_examples
 print('Training number examples {}'.format(train_numbers))
 print('Test number examples {}'.format(test_numbers))
 
-train_dataset = train_dataset.map(nrml.normalize)
-test_dataset = test_dataset.map(nrml.normalize)
+# train_dataset = train_dataset.map(nrml.normalize)
+# test_dataset = test_dataset.map(nrml.normalize)
 
 # Iteration parameters
-BATCH_SIZE = 32
+BATCH_SIZE = 16
 train_dataset = train_dataset.repeat().shuffle(train_numbers).batch(BATCH_SIZE)
 test_dataset = test_dataset.batch(BATCH_SIZE)
 
@@ -58,7 +59,7 @@ model.compile(
 # V Train the model V
 model.fit(
     train_dataset,
-    epochs=3,
+    epochs=1,
     steps_per_epoch=math.ceil(train_numbers/BATCH_SIZE)
 )
 
@@ -67,30 +68,20 @@ test_loss, test_accuracy = model.evaluate(
     test_dataset,
     steps=math.ceil(test_numbers/BATCH_SIZE)
 )
-np.set_printoptions(precision=2)
+
 print('Accuracy of the model:', test_accuracy)
 
 # Make predictions
 batchCount = 1
 i = 0
+name = '2 layer Neural Network' + ', input neuron: ' + str(INPUT_NEURONS)
 for test_images, test_labels in test_dataset.take(batchCount):
     test_images = test_images.numpy()
     test_labels = test_labels.numpy()
     predictions = model.predict(test_images)
     i += 1
-    plotImages.plotbatch(test_labels,class_names,predictions,test_images)
+    plotImages.plotbatch(name,test_loss,test_accuracy,BATCH_SIZE,test_labels,class_names,predictions,test_images)
 
-# Review
-print('Shape of the prediction array: ', predictions.shape)
-print('The predicted class names for the n batch: ', predictions[0])
-np.set_printoptions(precision=2)
-print('Sort by Highest rated: ', np.sort(predictions[0])[::-1])
-print('Labels: ', test_labels[0])
-print('Labels shape: ', test_labels.shape)
-print('Shape of predicted batch labels: ', predictions.shape)
-print('Shape of predicted batch image: ', test_images.shape)
-print('Shape of predicted labels: ', predictions[0].shape)
-print('Shape of predicted image: ', test_images[0].shape)
 
 
 

@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df232eb5-8393-430e-babb-05e2398ad2d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lesson_3/supp.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson_3/fashionmnsitNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/fashionmnsitNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson_3/plotImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/plotImages.py" afterDir="false" />
