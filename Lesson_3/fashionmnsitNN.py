@@ -77,40 +77,9 @@ for test_images, test_labels in test_dataset.take(batchCount):
     test_images = test_images.numpy()
     test_labels = test_labels.numpy()
     predictions = model.predict(test_images)
-    index = 0
-    for image in test_images:
-        plt.subplot(4,8, index + 1)
-        plt.subplots_adjust(
-                    left=0.03,
-                    bottom=0.13,
-                    right=0.98,
-                    top=0.98,
-                    wspace=0.95,
-                    hspace=0.98)
-        plt.grid(False)
-        plt.imshow(test_images[index].reshape((28,28)), cmap=plt.cm.binary)
-        class_name_index = 0
-        highest_prediction = 0
-        highest_prediction_index = 0
-        for value in predictions[index]:
-            if value > highest_prediction:
-                highest_prediction = value
-                highest_prediction_index = class_name_index
-            class_name_index += 1
-        plt.xlabel('P: ' + str(highest_prediction) +
-                   '\n' + 'PC: ' + class_names[highest_prediction_index] +
-                   '\n' + 'GTC: ' + class_names[test_labels[index]])
-        # plt.text(2, 7,
-        #          'P: ' + str(highest_prediction) +
-        #            '\n' + 'PC: ' + class_names[highest_prediction_index] +
-        #            '\n' + 'GTC: ' + class_names[test_labels[index]],
-        #          horizontalalignment='left',
-        #          verticalalignment='top',
-        #          color='blue')
-        index += 1
     i += 1
-plt.show()
-plt.savefig(str(test_accuracy))
+    plotImages.plotbatch(test_labels,class_names,predictions,test_images)
+
 # Review
 print('Shape of the prediction array: ', predictions.shape)
 print('The predicted class names for the n batch: ', predictions[0])
@@ -122,6 +91,7 @@ print('Shape of predicted batch labels: ', predictions.shape)
 print('Shape of predicted batch image: ', test_images.shape)
 print('Shape of predicted labels: ', predictions[0].shape)
 print('Shape of predicted image: ', test_images[0].shape)
+
 
 
 
