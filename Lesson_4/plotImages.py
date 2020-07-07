@@ -67,3 +67,10 @@ def plotbatch(name, loss, accuracy, batch_size, test_labels,class_names,predicti
     plt.show()
 
 
+def plotImagesGrid(img_arr):
+    fig, axes = plt.subplots(1, 5, figsize = (20, 20))
+    axes = axes.flatten()
+    for img, ax in zip(img_arr, axes):
+        ax.imshow(img)
+    plt.tight_layout()
+    plt.show()

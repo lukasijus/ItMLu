@@ -20,11 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df232eb5-8393-430e-babb-05e2398ad2d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lesson_4/CNN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_4/nrml.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_4/plotImages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_4/supp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_3/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_4/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_5/MORE_CNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_5/vectorize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson_2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_2/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson_4/plotImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_4/plotImages.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,10 +120,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="351" y="0" key="#__init__" timestamp="1594103824778">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="351" y="0" key="#__init__/0.0.1280.680@0.0.1280.680" timestamp="1594103824778" />
     <state x="353" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593529261361">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="353" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1593529261361" />
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594132875488">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1594132875488" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1593448569018">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -137,9 +152,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1593642824075" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1594070912569">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1594135910537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1594070912569" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1594135910537" />
   </component>
 </project>
