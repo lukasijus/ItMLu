@@ -20,18 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df232eb5-8393-430e-babb-05e2398ad2d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lesson_2/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_4/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_5/MORE_CNN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_5/vectorize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_2/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_2/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_4/plotImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_4/plotImages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson_5/MORE_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_5/MORE_CNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

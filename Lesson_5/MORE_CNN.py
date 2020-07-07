@@ -37,6 +37,7 @@ print('number of training cat images: ' , num_cats_tr)
 print('number of training dog images: ' , num_dogs_tr)
 print('number of validation cat images: ' , num_cats_vl)
 print('number of validation dog images: ' , num_dogs_vl)
+
 # Model parameters
 BATCH_SIZE = 100
 IMAGE_SHAPE = 150
@@ -44,52 +45,68 @@ class_names = ['cat', 'dog']
 training_image_generator = ImageDataGenerator(rescale=1./255)
 validation_image_generator = ImageDataGenerator(rescale=1./255)
 
-# load, rescale and resize the images
-train_data_gen = training_image_generator.flow_from_directory(batch_size=BATCH_SIZE,
-                                                              directory=train_dir,
-                                                              shuffle=True,
-                                                              target_size=(IMAGE_SHAPE, IMAGE_SHAPE),
-                                                              class_mode='binary')
+# Put all together
+image_gen_train = ImageDataGenerator(
+    rescale=1./255,
+    rotation_range=40,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.2,
+    zoom_range=0.2,
+    horizontal_flip=True,
+    fill_mode='nearest'
+)
 
-validation_data_gen = training_image_generator.flow_from_directory(batch_size=BATCH_SIZE,
+train_data_gen = image_gen_train.flow_from_directory( batch_size=BATCH_SIZE,
+                                                directory=train_dir,
+                                                shuffle=True,
+                                                target_size=(IMAGE_SHAPE, IMAGE_SHAPE),
+                                                class_mode='binary')
+
+augmented_images = [train_data_gen[0][0][0] for i in range(5)]
+plotImagesGrid(augmented_images)
+
+validation_data_gen = validation_image_generator.flow_from_directory(batch_size=BATCH_SIZE,
                                                               directory=validation_dir,
                                                               shuffle=False,
                                                               target_size=(IMAGE_SHAPE, IMAGE_SHAPE),
                                                               class_mode='binary')
 
-sample_training_images, _ = next(train_data_gen)
+
+
 
 # plotImagesGrid(sample_training_images[:5])
 
 
 # Build a model
 model = tf.keras.models.Sequential([
-    tf.keras.layers.Conv2D(2, (3, 3), activation='relu', input_shape= (IMAGE_SHAPE, IMAGE_SHAPE, 3)),
+    tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape= (IMAGE_SHAPE, IMAGE_SHAPE, 3)),
     tf.keras.layers.MaxPooling2D(2, 2),
 
-    tf.keras.layers.Conv2D(4, (3, 3), activation='relu'),
+    tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
     tf.keras.layers.MaxPooling2D(2, 2),
 
-    tf.keras.layers.Conv2D(8, (3, 3), activation='relu'),
+    tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
     tf.keras.layers.MaxPooling2D(2, 2),
 
-    tf.keras.layers.Conv2D(8, (3, 3), activation='relu'),
+    tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
     tf.keras.layers.MaxPooling2D(2, 2),
 
+    tf.keras.layers.Dropout(0.5),
     tf.keras.layers.Flatten(),
-    tf.keras.layers.Dense(16, activation='relu'),
+    tf.keras.layers.Dense(512, activation='relu'),
     tf.keras.layers.Dense(2, activation='softmax')
 ])
-
+#
 # Compile a model
 model.compile(
     optimizer='adam',
     loss='sparse_categorical_crossentropy',
     metrics=['accuracy'])
 
-# Iteration parameters
+# # Iteration parameters
 LAYERS = len(model.layers)
-EPOCH = 2
+EPOCH = 10
 
 # V Train the model V
 history = model.fit(
@@ -99,7 +116,7 @@ history = model.fit(
     validation_data=validation_data_gen,
     validation_steps=math.ceil((num_cats_vl+num_dogs_vl)/BATCH_SIZE)
 )
-
+#
 # Visualizing
 # Retrieve a list of accuracy results on training and validation data
 # sets for each training epoch
