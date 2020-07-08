@@ -67,7 +67,7 @@ print('Validation Examples: ', val_num)
 train_dir = os.path.join(data_directory, 'train')
 val_dir = os.path.join(data_directory, 'validation')
 
-BATCH_SIZE = 120
+BATCH_SIZE = 100
 IMAGE_SHAPE = 150
 
 # DATA AUGMENTATION
@@ -92,11 +92,6 @@ model = imp.tf.keras.models.Sequential([
 
     imp.tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
     imp.tf.keras.layers.MaxPooling2D(2, 2),
-
-    imp.tf.keras.layers.Flatten(),
-    imp.tf.keras.layers.Conv2D(512, (3, 3), activation='relu'),
-    imp.tf.keras.layers.MaxPooling2D(2, 2),
-
     
     imp.tf.keras.layers.Flatten(),
     imp.tf.keras.layers.Dense(512, activation='relu'),
@@ -104,7 +99,7 @@ model = imp.tf.keras.models.Sequential([
 ])
 
 # compile a model
-model.compile(optimizer='adam', loss='sparse_crossentropy',metrics=['accuracy'])
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy',metrics=['accuracy'])
 
 model.summary()
 # Train a model
