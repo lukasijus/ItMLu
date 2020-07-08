@@ -68,59 +68,47 @@ train_dir = os.path.join(data_directory, 'train')
 val_dir = os.path.join(data_directory, 'validation')
 
 BATCH_SIZE = 120
-IMAGE_SHAPE = 64
+IMAGE_SHAPE = 150
 
 # DATA AUGMENTATION
 train_data_params = imp.tf.keras.preprocessing.image.ImageDataGenerator(
     rescale=1./255,
-    rotation_range=25,
-    zoom_range=0.3,
-    horizontal_flip=True
+    rotation_range=45,
+    zoom_range=0.5,
+    horizontal_flip=True,
+    width_shift_range=0.2,
+    height_shift_range=0.2
                         )
 # PREPARE DATA FOR THE MODEL
-train_data = train_data_params.flow_from_directory(directory=train_dir, batch_size=BATCH_SIZE, shuffle=True, target_size=(IMAGE_SHAPE,IMAGE_SHAPE), class_mode='binary')
-validation_data = train_data_params.flow_from_directory(directory=val_dir, batch_size=BATCH_SIZE, shuffle=False, target_size=(IMAGE_SHAPE,IMAGE_SHAPE), class_mode='binary' )
+train_data = train_data_params.flow_from_directory(directory=train_dir, batch_size=BATCH_SIZE, shuffle=True, target_size=(IMAGE_SHAPE,IMAGE_SHAPE), class_mode='sparse')
+validation_data = train_data_params.flow_from_directory(directory=val_dir, batch_size=BATCH_SIZE, shuffle=False, target_size=(IMAGE_SHAPE,IMAGE_SHAPE), class_mode='sparse' )
 # Build a model
 model = imp.tf.keras.models.Sequential([
-    imp.tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape= (IMAGE_SHAPE, IMAGE_SHAPE, 3)),
+    imp.tf.keras.layers.Conv2D(16, (3, 3), activation='relu', input_shape= (IMAGE_SHAPE, IMAGE_SHAPE, 3)),
     imp.tf.keras.layers.MaxPooling2D(2, 2),
 
-    imp.tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
+    imp.tf.keras.layers.Conv2D(32, (3, 3), activation='relu'),
     imp.tf.keras.layers.MaxPooling2D(2, 2),
 
-    imp.tf.keras.layers.Conv2D(256, (3, 3), activation='relu'),
+    imp.tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
     imp.tf.keras.layers.MaxPooling2D(2, 2),
 
-
-    imp.tf.keras.layers.Conv2D(256, (3, 3), activation='relu'),
-    imp.tf.keras.layers.Dropout(0.2),
+    imp.tf.keras.layers.Flatten(),
     imp.tf.keras.layers.Conv2D(512, (3, 3), activation='relu'),
     imp.tf.keras.layers.MaxPooling2D(2, 2),
 
     
     imp.tf.keras.layers.Flatten(),
     imp.tf.keras.layers.Dense(512, activation='relu'),
-    imp.tf.keras.layers.Dropout(0.2),
-    imp.tf.keras.layers.Dense(256, activation='relu'),
     imp.tf.keras.layers.Dense(5, activation='softmax')
 ])
 
-# Resnet model
-res_model = imp.tf.keras.applications.resnet.ResNet50(
-     include_top=True,
-        weights=None,
-        input_tensor=None,
-        input_shape=None,
-        pooling=max,
-        classes=5,
-)
-
 # compile a model
-model.compile(optimizer='adam', loss='binary_crossentropy',metrics=['accuracy'])
+model.compile(optimizer='adam', loss='sparse_crossentropy',metrics=['accuracy'])
 
 model.summary()
 # Train a model
-history = model.fit(train_data, epochs=10, steps_per_epoch= imp.np.ceil(train_num/BATCH_SIZE), validation_data=validation_data,validation_steps=imp.np.ceil(val_num/BATCH_SIZE))
+history = model.fit(train_data, epochs=80, steps_per_epoch= imp.np.ceil(train_num/BATCH_SIZE), validation_data=validation_data,validation_steps=imp.np.ceil(val_num/BATCH_SIZE))
 
 
 #
@@ -141,6 +129,7 @@ epochs = range(len(acc))
 # Plot training and validation accuracy per epoch
 imp.plt.plot(epochs, acc)
 imp.plt.plot(epochs, val_acc)
+imp.plt.legend((acc, val_acc), ('acc', 'val_acc'))
 imp.plt.title('Training and validation accuracy')
 
 imp.plt.figure()
@@ -148,6 +137,7 @@ imp.plt.figure()
 # Plot training and validation loss per epoch
 imp.plt.plot(epochs, loss)
 imp.plt.plot(epochs, val_loss)
+imp.plt.legend((loss, val_loss), ('loss', 'val_loss'))
 imp.plt.title('Training and validation `loss')
 imp.plt.show()
 

@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df232eb5-8393-430e-babb-05e2398ad2d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lesson_5/FLOWER_CNN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_5/Figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_5/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_5/copy_files.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/initialize_imports.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_5/MORE_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_5/MORE_CNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson_5/FLOWER_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_5/FLOWER_CNN.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,9 +146,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1594237737917" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1594238038286">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1594244786049">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1594238038286" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1594244786049" />
   </component>
 </project>
