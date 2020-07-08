@@ -19,7 +19,9 @@ import matplotlib.pyplot as plt
 # zip_dir = tf.keras.utils.get_file('cats_and_dogs_filtered.zip', origin=_URL, extract=True)
 
 # zip_dir_base = os.path.dirname(zip_dir)
-base_dir = os.path.join('C:\\Users\lukas.rimkus\.keras\datasets', 'cats_and_dogs_filtered')
+cats_n_dogs = 'cats_and_dogs_filtered'
+flowers = 'flower_photos'
+base_dir = os.path.join('C:\\Users\lukas.rimkus\.keras\datasets', cats_n_dogs)
 train_dir = os.path.join(base_dir, 'train')
 validation_dir = os.path.join(base_dir, 'validation')
 
@@ -106,7 +108,7 @@ model.compile(
 
 # # Iteration parameters
 LAYERS = len(model.layers)
-EPOCH = 10
+EPOCH = 1
 
 # V Train the model V
 history = model.fit(

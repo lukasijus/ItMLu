@@ -20,6 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df232eb5-8393-430e-babb-05e2398ad2d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Lesson_5/FLOWER_CNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_5/Figure_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_5/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_5/copy_files.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initialize_imports.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson_5/MORE_CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_5/MORE_CNN.py" afterDir="false" />
     </list>
@@ -126,25 +131,29 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1593448569018" />
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1593642824075">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom" timestamp="1594204800110">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1593642824075" />
-    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1593642824075">
+    <state width="1259" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594204800110" />
+    <state width="1259" height="163" key="GridCell.Tab.0.center" timestamp="1594204800110">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1593642824075" />
-    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1593642824075">
+    <state width="1259" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594204800110" />
+    <state width="1259" height="163" key="GridCell.Tab.0.left" timestamp="1594204800110">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1593642824075" />
-    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1593642824075">
+    <state width="1259" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594204800110" />
+    <state width="1259" height="163" key="GridCell.Tab.0.right" timestamp="1594204800110">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1593642824075" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1594135910537">
+    <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594204800110" />
+    <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1594237737917">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1594135910537" />
+    <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1594237737917" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1594238038286">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1594238038286" />
   </component>
 </project>
