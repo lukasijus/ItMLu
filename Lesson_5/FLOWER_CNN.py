@@ -124,7 +124,6 @@ epochs = range(len(acc))
 # Plot training and validation accuracy per epoch
 imp.plt.plot(epochs, acc)
 imp.plt.plot(epochs, val_acc)
-imp.plt.legend((acc, val_acc), ('acc', 'val_acc'))
 imp.plt.title('Training and validation accuracy')
 
 imp.plt.figure()
@@ -132,7 +131,6 @@ imp.plt.figure()
 # Plot training and validation loss per epoch
 imp.plt.plot(epochs, loss)
 imp.plt.plot(epochs, val_loss)
-imp.plt.legend((loss, val_loss), ('loss', 'val_loss'))
 imp.plt.title('Training and validation `loss')
 imp.plt.show()
 
