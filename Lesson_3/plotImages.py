@@ -1,10 +1,11 @@
 # This function plots images
+import tensorflow as tf
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import math
-
+import os
 from colour import Color
-
+from PIL import Image
 red = Color("red")
 
 def plotimages(class_names, dataset, imageCount):
@@ -65,5 +66,24 @@ def plotbatch(name, loss, accuracy, batch_size, test_labels,class_names,predicti
         name  = 'LOSS_' + str(loss) + '_ACCURACY_' + str(accuracy) + name + '.png'
         plt.savefig(name)
     plt.show()
+
+
+
+def dim(directory):
+    width = []
+    height = []
+    print('Return the dimensions of the image files in the directory in: ', directory)
+    list = os.listdir(directory)
+    for folder in list:
+        folder = os.path.join(directory, folder)
+        sub_list = os.listdir(folder)
+        for image in sub_list:
+            image = os.path.join(folder, image)
+            img_dim = Image.open(image)
+            w, h = img_dim.size
+            width.append(w)
+            height.append(h)
+    print('minimun width size: ', min(width))
+    print('minimun height size: ', min(height))
 
 
