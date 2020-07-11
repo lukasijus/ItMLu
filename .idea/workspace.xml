@@ -20,10 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df232eb5-8393-430e-babb-05e2398ad2d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Lesson_6/FLOWERS_TRANSFER_LEARNING.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_6/MobileNet_TRANSFER_LEARNING_FLOWER_LOSS_01771_ACC_0952.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_7/1594470041.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_7/1594500123.h5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_7/1594500123/saved_model.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_7/1594500123/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_7/1594500123/variables/variables.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_7/LOAD_MODEL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_7/SAVING_MODEL.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_3/plotImages.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/plotImages.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_6/TRANSFER_LEARNING.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_6/TRANSFER_LEARNING.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lesson_6/FLOWERS_TRANSFER_LEARNING.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_6/FLOWERS_TRANSFER_LEARNING.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,10 +150,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1259" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594204800110" />
-    <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1594416417993">
+    <state x="362" y="82" width="540" height="524" key="StructurePopup" timestamp="1594421759323">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1594416417993" />
+    <state x="362" y="82" width="540" height="524" key="StructurePopup/0.0.1280.680@0.0.1280.680" timestamp="1594421759323" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1594307785222">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
