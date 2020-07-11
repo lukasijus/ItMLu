@@ -54,3 +54,9 @@ reloaded.save(export_path_keras)
 export_path_sm = "./{}".format(int(t))
 print(export_path_sm)
 tf.saved_model.save(reloaded, export_path_sm)
+
+# LOAD SAVE_MODEL
+
+reloaded_sm = tf.saved_model.load(export_path_sm)
+reload_sm_result_batch = reloaded_sm(image_batch, training=False).numpy()
+res = reload_sm_result_batch
